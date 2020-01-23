@@ -14,17 +14,16 @@ public class HelloJoe {
 		
 		if (joe.startsWith("who") && joe.contains("joe")) {
 			System.out.print("Joe Mama");
-			for (int i = 0; i < 10;) {
+			for (int i = 0; i < 500;) {
 				try
 		        {
 		            runtime.exec("notepad.exe");
-		 
-		            //OR runtime.exec("notepad");
 		        }
 		        catch (Exception e)
 		        {
 		            e.printStackTrace();
 		        }
+				i += 1;
 			}
 		}
 		
